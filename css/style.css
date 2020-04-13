@@ -18,7 +18,7 @@
 }
 
 .text #runwords {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .input-container {
@@ -29,6 +29,8 @@
 
 .input-container textarea {
     resize: vertical;
+    border: 1px solid rgb(211, 211, 211);
+    text-decoration: none;
 }
 
 .controls-container {
