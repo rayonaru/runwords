@@ -1,0 +1,42 @@
+* {
+	font-family: "Lucida Console";
+}
+
+.main-container {
+
+}
+
+.text-container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+}
+
+.text #runwords {
+    font-size: 50px;
+}
+
+.input-container {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+.controls-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.controls button {
+    margin: 0px 20px 0px 20px;
+}
