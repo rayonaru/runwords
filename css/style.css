@@ -7,22 +7,23 @@
 }
 
 .text-container {
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .text {
     width: 100%;
+    display: flex;
+
+    justify-content: center;
 }
 
 .text #runwords {
-    font-size: 60px;
+    font-size: 50px;
+    width: 400px;
+    height: 500px;
 }
 
 .input-container {
-    margin-top: 300px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
 }
@@ -41,4 +42,8 @@
 
 .controls button {
     margin: 0px 20px 0px 20px;
+}
+
+.controls input {
+    width: 70px;
 }

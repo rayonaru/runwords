@@ -11,7 +11,7 @@
     <div class="main-container">
         <div class="text-container">
             <div class="text">
-                <marquee id="runwords" scrollamount="20">Hello my dead friend! You are welcome!</marquee>
+                <marquee id="runwords" scrollamount="10" direction=up>Hello my dead friend! You are welcome!</marquee>
             </div>
         </div>
         <div class="input-container">
@@ -19,6 +19,14 @@
         </div>
         <div class="controls-container">
             <div class="controls">
+                <label>Speed</label>
+                <input type="text" id="speed" value="10">
+                <label>Height</label>
+                <input type="text" id="height" value="500">
+                <label>Width</label>
+                <input type="text" id="width" value="400">
+                <label>Font</label>
+                <input type="text" id="font" value="50">
                 <button class="w3-button w3-white w3-border" onclick="runUserText()">Run!</button>
             </div>
         </div>
@@ -35,6 +43,15 @@
 
         var runwords = document.getElementById('runwords');
         runwords.innerText = usertext;
+
+        var speed = document.getElementById('speed');
+        var height = document.getElementById('height');
+        var width = document.getElementById('width');
+        var font = document.getElementById('font');
+        runwords.setAttribute('scrollamount', speed.value);
+        runwords.style.height = height.value + "px";
+        runwords.style.width = width.value + "px";
+        runwords.style.fontSize = font.value + "px";
     };
 
 </script>
